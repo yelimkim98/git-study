@@ -173,3 +173,5 @@ test	https://github.com/yelimkim98/java-chess.git (push)
 - [https://suwoni-codelab.com/git/2018/04/06/Git-stash/](https://suwoni-codelab.com/git/2018/04/06/Git-stash/)
 - [https://wit.nts-corp.com/2014/03/25/1153](https://wit.nts-corp.com/2014/03/25/1153)
 - [https://git-scm.com/docs/git-commit](https://git-scm.com/docs/git-commit)
+
+- [Git Remote 주요 명령어 정리] https://jistol.github.io/vcs/2017/01/26/git-remote/
