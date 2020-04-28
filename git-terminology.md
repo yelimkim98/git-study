@@ -64,7 +64,47 @@ test	https://github.com/yelimkim98/java-chess.git (push)
 
 ```
 ### fetch
-- git fetch 
+- 철수와 영희는 같은 원격저장소의 같은 브랜치를 clone 했습니다. 그 뒤 철수는 철수대로, 영희는 영희대로 작업하고 commit 했습니다.
+이때, 두 사람의 커밋 히스토리가 달라졌기 때문에 리모트 저장소에 push할 때 에러가 발생하고 말았습니다.
+이를 해결하기 위해 git fetch 명령어를 사용합니다.  
+
+철수가 먼저 푸시를 하고나서 영희가 푸시를 시도하면 충돌이 날 것입니다.  
+
+영희의 커밋을 푸시하려면, 철수의 커밋 기록 뒤에 영희의 커밋 기록이 추가되는 형태여야 할 것입니다.  
+
+이를 위해 영희는 가장 먼저,  
+커밋 히스토리가 변경된 원격저장소의  
+커밋 히스토리와 저장된 자료들을 영희의 로컬로 가져옵니다.  
+
+이때 ```git fetch```를 사용합니다.  
+
+```
+[root@localhost test]# git remote -v
+
+  test	https://github.com/yelimkim98/java-chess.git (fetch)
+  test	https://github.com/yelimkim98/java-chess.git (push)
+  test2	https://github.com/woowacourse/jwp-chess.git (fetch)    // test2 를 fetch 할 것이다.
+  test2	https://github.com/woowacourse/jwp-chess.git (push)
+
+[root@localhost test]# git fetch test2
+
+    ... (다운로드 등의 진행과정 : 생략) ...
+    
+  From https://github.com/woowacourse/jwp-chess
+   * [new branch]      aegis1920  -> test2/aegis1920
+   * [new branch]      begaonnuri -> test2/begaonnuri
+   * [new branch]      chws       -> test2/chws
+   
+[root@localhost test]# git branch -a
+
+  remotes/test2/aegis1920        // 기존의 로컬 브랜치와는 별도의 브랜치들이 생성되어, 원격의 내용이 다운받아진다.
+  remotes/test2/begaonnuri
+  remotes/test2/chws
+
+```
+
+
+
 ### merge
 
 ### rebase
