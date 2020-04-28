@@ -56,9 +56,12 @@ origin httpsorigin  https://github.com/yelimkim98/jwp-chess.git (push)
 ```
 - git remote add [리모트이름] [경로] : 새 리모트를 추가합니다. [경로]영역에는 URL이나 파일경로를 넣을수 있습니다.
 ```
-$ git remote add mytest https://github.com/yelimkim98/java-chess.git
-$ git remote -v
-mytest https://github.com/yelimkim98/git-chess.git
+[root@localhost test]# git remote add test https://github.com/yelimkim98/java-chess.git
+[root@localhost test]# git remote -v
+test	https://github.com/yelimkim98/java-chess.git (fetch)
+test	https://github.com/yelimkim98/java-chess.git (push)
+// push, fetch 왜 따로 생기는지 이런거 모르겠다..
+
 ```
 ### fetch
 - git fetch 
