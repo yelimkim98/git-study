@@ -44,9 +44,24 @@
 ## 응용
 
 ### remote
-
+- git remote : 연결된 remote 저장소들에 붙인 이름들 출력 (리모트 = 원격 맞나?)
+```
+$ git remote
+origin
+```
+- git remote -v : 연결된 remote 저장소들 이름 & 원격저장소 링크 
+```
+$ git remote -v
+origin httpsorigin  https://github.com/yelimkim98/jwp-chess.git (push)
+```
+- git remote add [리모트이름] [경로] : 새 리모트를 추가합니다. [경로]영역에는 URL이나 파일경로를 넣을수 있습니다.
+```
+$ git remote add mytest https://github.com/yelimkim98/java-chess.git
+$ git remote -v
+mytest https://github.com/yelimkim98/git-chess.git
+```
 ### fetch
-
+- git fetch 
 ### merge
 
 ### rebase
