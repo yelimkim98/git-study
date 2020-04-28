@@ -93,7 +93,7 @@ test	https://github.com/yelimkim98/java-chess.git (push)
   From https://github.com/woowacourse/jwp-chess
    * [new branch]      aegis1920  -> test2/aegis1920
    * [new branch]      begaonnuri -> test2/begaonnuri
-   * [new branch]      chws       -> test2/chws
+   * [new branch]      chws       -> test2/chws           // 원격저장소의 chws 브랜치가 test2/chws 브랜치로 로컬에 들어왔다는 뜻인듯?
    
 [root@localhost test]# git branch -a
 
